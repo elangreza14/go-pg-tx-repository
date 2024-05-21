@@ -14,4 +14,4 @@ migrate-create:
 	@read -p  "What is the name of migration? " NAME; \
 	migrate create -ext sql -tz Asia/Jakarta -dir ${MIGRATION_FOLDER} -format "20060102150405" $$NAME
 
-.PHONY: migrate migrate-create
+.PHONY: migrate migrate-create run-http
